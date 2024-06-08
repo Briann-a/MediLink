@@ -1,0 +1,46 @@
+[
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "records",
+      "outputs": [
+        {
+          "name": "jsonData",
+          "type": "string"
+        },
+        {
+          "name": "isDoctor",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "jsonData",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "isSick",
+          "type": "bool"
+        }
+      ],
+      "type": "event"
+    }
+  ]
