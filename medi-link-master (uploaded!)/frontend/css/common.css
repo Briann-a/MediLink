@@ -1,0 +1,93 @@
+/* common.css */
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #e9ecef;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: #007bff; /* Blue shade for navigation */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Buttons */
+button, .button {
+    background-color: #17a2b8; /* Soft blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover, .button:hover {
+    background-color: #138496; /* Darker shade of button color */
+}
+
+/* Forms */
+input[type="text"], input[type="password"], input[type="email"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="file"]:focus {
+    border-color: #17a2b8; /* Matching focus color with buttons */
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

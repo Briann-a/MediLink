@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDILINK Landing Page</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        .background {
+            background-image: url('../images/landing-background-image.png'); /* Ensure the path to the background image is correct */
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative; /* Added to position the logo absolutely within this container */
+        }
+        .logo {
+            position: absolute; /* Positioning the logo absolutely */
+            top: 40%; /* Adjusted to be slightly above the horizontal center line */
+            left: 50%; /* Center the logo horizontally */
+            width: 195px; /* Increased size by 30% from 150px */
+            height: auto; /* Maintain aspect ratio */
+            transform: translate(-50%, -50%); /* Center the logo exactly */
+        }
+        .buttons {
+            width: 360px; /* Increased width for larger buttons */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px; /* Increased space from logo to buttons */
+        }
+        .button {
+            padding: 12px 20px; /* Increased padding for larger button appearance */
+            font-size: 16px; /* Maintaining text size */
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="../images/medilink-logo.png" alt="MEDILINK Logo" class="logo"> <!-- Updated for direct styling -->
+        <div class="buttons">
+            <a href="../html/login.html" class="button">Doctor</a>
+            <a href="../html/patients.html" class="button">Patient</a>
+        </div>
+    </div>
+</body>
+</html>

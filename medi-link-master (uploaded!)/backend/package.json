@@ -1,0 +1,13 @@
+const PatientRecords = artifacts.require("PatientRecords");
+
+contract("PatientRecords", accounts => {
+  it("should store and retrieve patient records", async () => {
+    const contract = await PatientRecords.deployed();
+    await contract.setPatientRecord(1, "John Doe", "1990-01-01", "Healthy", {from: accounts[0]});
+    const result = await contract.getPatientRecord(1);
+
+    assert.equal(result.name, "John Doe", "The name of the patient was not stored correctly.");
+    assert.equal(result.dateOfBirth, "1990-01-01", "The DOB of the patient was not stored correctly.");
+    assert.equal(result.healthCondition, "Healthy", "The health condition of the patient was not stored correctly.");
+  });
+});

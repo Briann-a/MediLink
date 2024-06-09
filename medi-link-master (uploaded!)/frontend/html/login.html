@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - MEDILINK</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        body {
+            background-image: url('../images/landing-background-image.png'); /* Path to the hospital background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.95); /* Slightly transparent white for better visibility */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: auto; /* Centered vertically and horizontally */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .form-input {
+            margin-bottom: 15px;
+        }
+        .form-input input {
+            width: 90%;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Get Started</h2>
+        <form action="upload.html" method="post">
+            <div class="form-input">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-input">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-input">
+                <input type="text" name="hospitalID" placeholder="Hospital ID" required>
+            </div>
+            <button type="submit">Log in</button>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        /* Consistent sidebar styling across all pages */
+        .sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background-color: #17a2b8;
+            color: white;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .confirmation {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .additional-info {
+            display: none;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="../html/patients.html">Patients</a></li>
+            <li><a href="../html/documents.html">Documents</a></li>
+            <li><a href="../html/schedule.html">Schedule</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="confirmation">
+            <h2>Submission Successful</h2>
+            <p>Thank you for your submission. The following data has been processed:</p>
+            <div class="card">
+                <p><strong>Patient Name:</strong> Allan</p>
+                <p><strong>Date of Birth:</strong> [Date of Birth]</p>
+                <p><strong>Medical Condition:</strong> [Medical Condition]</p>
+                <p><strong>Treatment Plan:</strong> [Treatment Plan]</p>
+                <p><strong>Allergies:</strong> [Allergies]</p>
+                <p><strong>Emergency Contact:</strong> [Emergency Contact]</p>
+                <p><strong>Doctor's Notes:</strong> [Doctor's Notes]</p>
+            </div>
+            <p class="upload-note">This information has been successfully uploaded to our blockchain network, ensuring data integrity and security.</p>
+            <p class="timestamp">Uploaded on: June 9, 2024 from IP 129.97.124.25</p>
+            <p class="hospital-note">Note: Since no hospital was selected, the nearest hospital in our network is Grand River Hospital.</p>
+        </div>
+            <p>This information has been successfully uploaded to our blockchain network! Address: 0xefBD725Dd7e13f036D0982dB5DeA4D8892D86FbA, completed on the ETH network.</p>
+        </div>
+    </div>
+    <script>
+        function toggleAdditionalInfo() {
+            var info = document.getElementById('additionalInfo');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

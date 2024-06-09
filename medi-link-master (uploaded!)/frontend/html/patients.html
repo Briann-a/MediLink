@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - Home Page</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        /* Sidebar styles */
+        .sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none; /* Removes underline */
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li a:hover, .sidebar ul li a.active {
+            background-color: #17a2b8;
+            color: white;
+        }
+
+        /* Main content styles */
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .search-box {
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .patients-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .patient {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .patient img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Circular images */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="../html/patients.html" class="active">Patients</a></li>
+            <li><a id="documentsLink" href="../html/upload.html" class="active">Documents</a></li>
+            <li><a href="../html/schedule.html">Schedule</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <input type="text" class="search-box" placeholder="Search for a patient">
+        <div class="patients-grid">
+            <div class="patient">
+                <img src="../images/patient1.png" alt="Patient 1">
+                <div>Emma Xue</div>
+            </div>
+            <div class="patient">
+                <img src="../images/patient2.png" alt="Patient 2">
+                <div>William Li</div>
+            </div>
+            <div class="patient">
+                <img src="../images/patient3.png" alt="Patient 3">
+                <div>Olivia Zhao</div>
+            </div>
+            <div class="patient">
+                <img src="../images/patient4.png" alt="Patient 4">
+                <div>Noah Shi</div>
+            </div>
+            <div class="patient">
+                <img src="../images/patient5.png" alt="Patient 5">
+                <div>Satoshi Nakamoto</div>
+            </div>
+            <div class="patient">
+                <img src="../images/patient6.png" alt="Patient 6">
+                <div>William Bishop</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
